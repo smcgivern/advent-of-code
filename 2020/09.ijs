@@ -1,11 +1,7 @@
 numbers =: ". > cutopen 1!:1(<'09.dat')
 
 NB. part 1
-valid =: monad define
-'a b' =: (}: ; {:) y
-b e. }. ~. ,/ }: /. +/~ a
-)
-
+valid =: monad def '({: y) e. }. ~. ,/ }: /. +/~ }: y'
 ] target =: numbers {~ {. 25 + I. -. 26 valid\ numbers
 
 NB. part 2
