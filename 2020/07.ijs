@@ -14,5 +14,7 @@ node =: dyad define
 parents =: }. compact ,/ colours nodes"0 (''; rawpositions)
 
 NB. part 1
-nextparents =: dyad def '1 {"1 y {~ I. x e.~ {."1 y'
-<: +/ -. 0 = ~. , (nextparents&parents)^:a: pos <'shiny gold'
+nextparents =: dyad def 'y {~ I. (1 {"1 x) e.~ {."1 y'
+<: +/ -. 0 = ~. 1 {"1 ,/ (nextparents&parents)^:a: (0 , pos <'shiny gold')
+
+NB. part 2 in Ruby :-(
