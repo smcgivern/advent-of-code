@@ -1,8 +1,7 @@
-adapters =: /:~ ". > cutopen 1!:1(<'10.dat')
+adapters =: ([ , 3+{:) 0 , /:~ ". > cutopen 1!:1(<'10.dat')
 
 NB. part 1
-NB. may not work if adapters does not start with 1
-*/ >: +/ (1 3 $~ (# adapters) , 2) = (<0 1) |: (-/~ 1&|.) adapters
+*/ +/ 1 3 =/~ 2 -~/\ adapters
 
 NB. part 2
-*/ (1 1 2 4 7) {~ <: (#;.1) 0 , 1 = (<0 1) |: (-/~ 1&|.) 0 , adapters
+*/ (1 1 2 4 7) {~ (+/;.1) 0 , 1 = 2 -~/\ adapters
