@@ -117,7 +117,7 @@ NB. term ::= factor ( ('*'|'%') factor )*
 term=: 3 : 0
   r=. factor ''
   while. 1 do.
-    if.     accept S_MUL do. r=. r * factor''
+    if.     accept S_MUL do. r=. r + factor''
     elseif. accept S_DIV do. r=. r % factor''
     elseif.              do. break. end.
   end.
@@ -128,7 +128,7 @@ NB. expr ::= term ( ('+'|'-') term )*
 expr=: 3 : 0
   r=. term ''
   while. 1 do.
-    if.     accept S_ADD do. r=. r + term''
+    if.     accept S_ADD do. r=. r * term''
     elseif. accept S_SUB do. r=. r - term''
     elseif.              do. break. end.
   end.
