@@ -1,4 +1,4 @@
-# Only part 1; part is in J
+# Only part 2; part 1 is in J
 def game(initial, to)
   indices = {}
   last = initial.last
