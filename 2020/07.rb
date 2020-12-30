@@ -1,4 +1,4 @@
-# Only part 2; part is in J
+# Only part 2; part 1 is in J
 def parse_bags(filename)
   open(filename).read.lines.to_h do |line|
     a, b = line.split('contain')
