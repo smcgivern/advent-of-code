@@ -18,3 +18,5 @@ c =. y {.~ >: 1 i.~ > (x&done2)&.> <\ y
 b =. x {~ I. -. +./"1 x winners }: c NB. find only losing board, ignoring last number
 ({: c) * +/^:_ b * -. (e.&c)"0 b
 }}
+
+smoutput boards score2 calls NB. part 2
