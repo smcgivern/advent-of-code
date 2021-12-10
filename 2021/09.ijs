@@ -11,3 +11,5 @@ a + y * a
 }}
 
 smoutput +/^:_ lowpoints input NB. part 1
+
+NB. part 2 in Ruby, so most of this is far too verbose :-(
