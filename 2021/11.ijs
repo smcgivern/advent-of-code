@@ -9,5 +9,5 @@ mask =. 9 < y
 
 step =: {{ (-.@(__&=) * [) flash^:_ >: y }}
 
-smoutput  (+/^:_) 0 = step^:(<101) input NB. part 1
+smoutput (+/^:_) 0 = step^:(<101) input NB. part 1
 smoutput <: # step^:{{ -. (*/^:_) 0 = y }}^:a: input NB. part 1

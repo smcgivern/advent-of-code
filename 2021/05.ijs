@@ -3,8 +3,8 @@ input =: ". > cutLF ('->' ; ',') stringreplace fread '05.dat'
 valid =: {{ +/ =/ 2 2 $ y }}
 
 grid =: {{
-'a b' =: 2 2 $ y
-c =: b ,~ a +"1 |: (* * i."0@|) b - a
+'a b' =. 2 2 $ y
+c =. b ,~ a +"1 |: (* * i."0@|) b - a
 1 c} x $ 0
 }}
 
