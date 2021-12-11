@@ -11,7 +11,7 @@ score =: {{ - (1 $ 0) {. F.. incomplete ({&(_3 3 _57 57 _1197 1197 _25137 25137)
 
 smoutput +/ > score&.> input NB. part 1
 
-score2 =: {{ {. {{ x + y * 5 }}/\. }. (1 $ 0) ] F.. incomplete ({&(_1 1 _2 2 _3 3 _4 4)) y }}
+score2 =: {{ {. {{ x + y * 5 }}/\. (1 $ 0) }. F.. incomplete ({&(_1 1 _2 2 _3 3 _4 4)) y }}
 median =: <.@-:@# { /:~
 
 smoutput median > score2&.> input #~ -. * > score&.> input NB. part 2
