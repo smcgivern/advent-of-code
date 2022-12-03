@@ -1,4 +1,4 @@
-alphabet =. , {{ a. {~ y + i. 26 }}"0 (97 65)
+alphabet =: , {{ a. {~ y + i. 26 }}"0 (97 65)
 input =. {{ >: alphabet i. y }}&.> cutLF fread '03.dat'
 intersect =. monad define
 'a b' =. ({.&y)"0 (1 _1 * -: # y)
