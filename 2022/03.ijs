@@ -1,15 +1,7 @@
 alphabet =: , {{ a. {~ y + i. 26 }}"0 (97 65)
 input =. {{ >: alphabet i. y }}&.> cutLF fread '03.dat'
-intersect =. monad define
-'a b' =. ({.&y)"0 (1 _1 * -: # y)
-{. a (e. # [) b
-)
+halves =. {{ ({.&y)"0 (1 _1 * -: # y) }}
+intersect =. {{ {. (e. # [)/ y }}
 
-smoutput +/ > intersect&.> input NB. part 1
-
-intersect3 =. monad define
-'a b c' =. y
-{. a (e. # [) b (e. # [) c
-)
-
-smoutput +/ _3 intersect3\ input NB. part 2
+smoutput +/ > intersect@halves&.> input NB. part 1
+smoutput +/ _3 intersect@:>\ input NB. part 2
