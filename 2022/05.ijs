@@ -7,5 +7,5 @@ move =. adverb define
 (<d ,~ u i {. c) b} (< i }. c) a} y
 )
 
-smoutput }. > {.&.> cols ] F.. (|. move) instrs NB. part 1
-smoutput }. > {.&.> cols ] F.. ([ move) instrs NB. part 2
+echo }. > {.&.> cols ] F.. (|. move) instrs NB. part 1
+echo }. > {.&.> cols ] F.. ([ move) instrs NB. part 2
