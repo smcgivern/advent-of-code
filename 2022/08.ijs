@@ -1,8 +1,5 @@
 input =. > "."0&.> cutLF fread '08.dat'
-visible =. 1 , 2 ~:/\ >./\
+map =. {{ (u"1)`(u"1&.|:)`((u&.|.)"1)`(((u&.|.)"1)&.|:)`:0 y }}
 
-echo +/, +./ visible`(visible&.|:)`(visible&.|.)`(visible&.(|.@:|:))`:0 input NB. part 1
-
-seen =. (>:@:i.&0 <. #)@:({. > }.)\.
-
-echo >./, */ (seen"1)`(seen"1&.|:)`((seen&.|.)"1)`(((seen&.|.)"1)&.|:)`:0 input NB. part 2
+echo +/, +./ (1 , 2 ~:/\ >./\) map input NB. part 1
+echo >./, */ ((>:@:i.&0 <. #)@:({. > }.)\.) map input NB. part 2
